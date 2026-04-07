@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Team Roping Arenas — Nationwide Arena Directory | TeamRopingCalendar.com</title>
+<meta name="description" content="Nationwide team roping arena directory. 97 verified team roping venues across Arizona, Texas, Oklahoma, Nevada, California and more. Find arenas near you.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4A2D18">
+<link rel="canonical" href="https://www.teamropingcalendar.com/arenas.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Team Roping Arena Directory — 97 Venues Nationwide | TeamRopingCalendar.com">
+<meta property="og:description" content="Find team roping arenas near you. 97 verified venues across 16 states with addresses, phone numbers, and Google Maps links.">
+<meta property="og:url" content="https://www.teamropingcalendar.com/arenas.html">
+<meta property="og:image" content="https://www.teamropingcalendar.com/facebookcard.jpg">
+<link rel="icon" href="https://www.teamropingcalendar.com/facebookcard.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+*:focus { outline: 2px solid var(--rope); outline-offset: 2px; }
+html { touch-action: manipulation; overflow-x: hidden; }
+body { overflow-x: hidden; }
+
+:root {
+  --sand: #F5F0E8;
+  --sand-dark: #E8DFD0;
+  --leather: #8B5E3C;
+  --leather-dark: #6B4226;
+  --leather-deeper: #4A2D18;
+  --rope: #C4A265;
+  --rope-light: #D4BA85;
+  --rope-pale: #EDE3CC;
+  --ink: #2C1810;
+  --ink-soft: #5A4535;
+  --ink-muted: #8B7B6B;
+  --cream: #FFFBF5;
+  --rust: #B8512A;
+  --rust-light: #F5E6DF;
+  --sage: #5B8C4A;
+  --sage-light: #E8EDDF;
+  --sage-dark: #4A7239;
+  --white: #FFFFFF;
+  --border: rgba(139,94,60,0.12);
+  --border-strong: rgba(139,94,60,0.25);
+  --shadow-sm: 0 1px 3px rgba(44,24,16,0.06);
+  --shadow-md: 0 4px 16px rgba(44,24,16,0.08);
+  --shadow-lg: 0 8px 32px rgba(44,24,16,0.12);
+  --radius: 10px;
+  --radius-lg: 14px;
+  --transition: 0.2s ease;
+}
+
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  font-family: 'Outfit', -apple-system, sans-serif;
+  background: var(--sand);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* ============================================ */
+/* TOPBAR                                       */
+/* ============================================ */
+.topbar {
+  background: linear-gradient(135deg, var(--leather-deeper) 0%, var(--leather-dark) 100%);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.topbar-brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.topbar-logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--cream);
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+.topbar-logo span { color: var(--rope-light); }
+.topbar-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+.topbar-disclaimer { display: flex; flex-direction: column; gap: 1px; }
+
+/* ============================================ */
+/* HERO                                         */
+/* ============================================ */
+.hero-banner {
+  background: linear-gradient(160deg, var(--leather-deeper) 0%, var(--leather) 60%, var(--rope) 100%);
+  padding: 32px 20px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: var(--rope-light);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(196,162,101,0.3);
+}
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--cream);
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+.hero-title em { color: var(--rope-light); font-style: normal; }
+.hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+  padding: 10px 18px;
+}
+.hero-stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--cream);
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+/* ============================================ */
+/* TAB NAV                                      */
+/* ============================================ */
+.tab-nav {
+  background: var(--white);
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: sticky;
+  top: 58px;
+  z-index: 90;
+  box-shadow: var(--shadow-sm);
+}
+.tab-nav::-webkit-scrollbar { display: none; }
+.tab-btn {
+  flex-shrink: 0;
+  padding: 14px 20px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  margin-bottom: -2px;
+}
+.tab-btn:hover { color: var(--leather); background: var(--sand); }
+.tab-btn.active { color: var(--leather); border-bottom-color: var(--leather); }
+
+/* ============================================ */
+/* MAIN                                         */
+/* ============================================ */
+.main { padding: 20px 16px 80px; max-width: 900px; margin: 0 auto; }
+
+/* ============================================ */
+/* SEARCH + FILTER                              */
+/* ============================================ */
+.arenas-header { margin-bottom: 16px; }
+.arenas-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.search-wrap { position: relative; margin-bottom: 12px; }
+.search-wrap input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  background: var(--white);
+  color: var(--ink);
+}
+.search-wrap input:focus { border-color: var(--rope); outline: none; }
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+.filter-chips-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.filter-chips-scroll::-webkit-scrollbar { display: none; }
+.filter-chip {
+  background: var(--white);
+  border: 1px solid var(--border);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+}
+.filter-chip:hover, .filter-chip.active {
+  background: var(--leather);
+  color: var(--cream);
+  border-color: var(--leather);
+}
+
+/* ============================================ */
+/* RESULT COUNT                                 */
+/* ============================================ */
+.result-count {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  margin: 10px 0 14px;
+  font-weight: 500;
+}
+
+/* ============================================ */
+/* ARENA GRID                                   */
+/* ============================================ */
+.arena-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 600px) {
+  .arena-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================ */
+/* ARENA CARD                                   */
+/* ============================================ */
+.arena-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.arena-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+
+/* State stripe across top */
+.arena-card-stripe {
+  height: 4px;
+  background: var(--leather);
+  flex-shrink: 0;
+}
+.arena-card[data-state="TX"] .arena-card-stripe { background: #C4533A; }
+.arena-card[data-state="AZ"] .arena-card-stripe { background: #3A7CC4; }
+.arena-card[data-state="OK"] .arena-card-stripe { background: #7B3AC4; }
+.arena-card[data-state="CA"] .arena-card-stripe { background: #C4963A; }
+.arena-card[data-state="WA"] .arena-card-stripe { background: #3AB87B; }
+.arena-card[data-state="OR"] .arena-card-stripe { background: #3AB87B; }
+.arena-card[data-state="NV"] .arena-card-stripe { background: #C4A23A; }
+.arena-card[data-state="NM"] .arena-card-stripe { background: #C4533A; }
+.arena-card[data-state="ID"] .arena-card-stripe { background: #3A7CC4; }
+.arena-card[data-state="CO"] .arena-card-stripe { background: #3A4FC4; }
+
+.arena-card-body { padding: 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+
+.arena-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.arena-location {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.arena-address {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.arena-notes {
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  line-height: 1.4;
+  font-style: italic;
+}
+.arena-phone {
+  font-size: 0.78rem;
+  color: var(--leather);
+  font-weight: 600;
+}
+
+.arena-card-footer {
+  padding: 10px 16px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.arena-event-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: var(--rope-pale);
+  color: var(--leather-dark);
+  white-space: nowrap;
+}
+.arena-event-badge.high { background: var(--leather); color: var(--cream); }
+.arena-event-badge.mid { background: var(--rope-pale); color: var(--leather-dark); }
+.arena-map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--leather);
+  background: var(--sand);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 12px;
+  text-decoration: none;
+  transition: var(--transition);
+  white-space: nowrap;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+}
+.arena-map-btn:hover {
+  background: var(--leather);
+  color: var(--cream);
+  border-color: var(--leather);
+}
+
+/* No results */
+.no-results {
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--ink-muted);
+}
+.no-results-icon { font-size: 2.5rem; margin-bottom: 12px; }
+.no-results-text { font-size: 1rem; font-weight: 600; }
+
+/* Skip link */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-to-content:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
+  background: var(--leather);
+  color: var(--cream);
+  border-radius: 6px;
+  z-index: 9999;
+  font-weight: 700;
+}
+
+/* ============================================ */
+/* MOBILE                                       */
+/* ============================================ */
+@media (max-width: 600px) {
+  .topbar-disclaimer { display: none; }
+  .topbar-divider { display: none; }
+  .topbar { padding: 10px 14px; }
+  .topbar-logo { font-size: 1.6rem; }
+  .hero-banner { padding: 24px 14px 20px; }
+  .hero-title { font-size: 1.75rem; }
+  .hero-stats { gap: 0; display: grid; grid-template-columns: 1fr 1fr; }
+  .hero-stat { padding: 8px 6px; }
+  .hero-stat-value { font-size: 1.25rem; }
+  .tab-btn { font-size: 0.78rem; padding: 12px 14px; }
+  .main { padding: 16px 12px 80px; }
+}
+@media (max-width: 380px) {
+  .topbar-logo { font-size: 1.3rem; }
+  .hero-title { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-brand">
+    <a href="/" class="topbar-logo">Team<span>Roping</span>.ai</a>
+    <div class="topbar-divider"></div>
+    <div class="topbar-disclaimer">
+      <div style="font-size:0.82rem;color:#ffffff;font-weight:700;">AI-generated schedule — verify times, mistakes can happen</div>
+      <div style="font-size:0.82rem;color:#ffffff;font-weight:700;">A public service from Bridle &amp; Bit Magazine <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" style="color:var(--rope-light);font-weight:700;text-decoration:none;">(READ HERE FREE)</a></div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero-banner">
+  <div class="hero-badge">Nationwide Arena Directory</div>
+  <h1 class="hero-title">Team Roping <em>Arenas</em></h1>
+  <div class="hero-sub">97 verified venues across 16 states</div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-value">97</div>
+      <div class="hero-stat-label">Arenas</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">16</div>
+      <div class="hero-stat-label">States</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">369</div>
+      <div class="hero-stat-label">Events Mapped</div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB NAV -->
+<nav class="tab-nav" role="tablist" aria-label="Main navigation">
+  <button class="tab-btn" onclick="window.location.href='/'">Team Roping Calendar</button>
+  <button class="tab-btn active" aria-current="page">Arena Directory</button>
+</nav>
+
+<!-- MAIN -->
+<main class="main" id="main-content">
+
+  <div class="arenas-header">
+    <div class="arenas-title">Find a Team Roping Arena</div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="arena-search" placeholder="Search arenas by name, city, state..." aria-label="Search arenas" oninput="filterArenas()">
+    </div>
+    <div class="filter-chips-scroll" role="group" aria-label="Filter by state">
+      <button class="filter-chip active" data-state="all" onclick="setStateFilter(this,'all')">All States</button>
+      <button class="filter-chip" data-state="TX" onclick="setStateFilter(this,'TX')">Texas</button>
+      <button class="filter-chip" data-state="AZ" onclick="setStateFilter(this,'AZ')">Arizona</button>
+      <button class="filter-chip" data-state="OK" onclick="setStateFilter(this,'OK')">Oklahoma</button>
+      <button class="filter-chip" data-state="CA" onclick="setStateFilter(this,'CA')">California</button>
+      <button class="filter-chip" data-state="WA" onclick="setStateFilter(this,'WA')">Washington</button>
+      <button class="filter-chip" data-state="OR" onclick="setStateFilter(this,'OR')">Oregon</button>
+      <button class="filter-chip" data-state="NV" onclick="setStateFilter(this,'NV')">Nevada</button>
+      <button class="filter-chip" data-state="other" onclick="setStateFilter(this,'other')">Other States</button>
+    </div>
+    <div class="result-count" id="result-count">Showing 97 arenas</div>
+  </div>
+
+  <div class="arena-grid" id="arena-grid"></div>
+
+</main>
+
+<script>
+const ARENAS = [
+  {name:"377 Arena",address:"10740 N US Hwy 377",city:"Stephenville",state:"TX",zip:"76401",phone:"",website:"www.377arena.com",events:19,notes:"Twin 143×256' covered arenas, 220 stalls, built 2022"},
+  {name:"Reno-Sparks Livestock Events Center",address:"1350 N Wells Ave",city:"Reno",state:"NV",zip:"89512",phone:"(775) 688-5755",website:"rslec.com",events:16,notes:"43 acres, 660 stalls, 6,200-seat climate-controlled arena — home of Reno Rodeo & Bob Feist Invitational"},
+  {name:"Spokane Equestrian Center",address:"2205 W Gibbs Rd",city:"Spokane",state:"WA",zip:"99224",phone:"(509) 994-6635",website:"thespokaneequestriancenter.com",events:12,notes:"56 indoor stalls, 20 outdoor pens, large steel-framed indoor arena"},
+  {name:"Shady Spot Arena",address:"7303 E Massingale Rd",city:"Benton City",state:"WA",zip:"99320",phone:"",website:"",events:11,notes:"ACTRA Northwest chapter venue"},
+  {name:"JLK Arena",address:"2200 W Ranch Rd 152",city:"Llano",state:"TX",zip:"",phone:"",website:"",events:9,notes:"Central Texas roping venue"},
+  {name:"Dynamite Arena",address:"27619 N 42nd Street",city:"Cave Creek",state:"AZ",zip:"85331",phone:"",website:"",events:8,notes:"Arizona high desert arena, Cave Creek"},
+  {name:"Brown Ranch",address:"217 Hwy 1027",city:"Carbon",state:"TX",zip:"76435",phone:"",website:"",events:8,notes:"Working ranch roping facility"},
+  {name:"Range Riders Arena",address:"8829 FM Rd 1541",city:"Amarillo",state:"TX",zip:"79118",phone:"",website:"",events:7,notes:"Will Rogers Range Riders — oldest continuously operating riding club in the US"},
+  {name:"NRS Event Center",address:"309 CR 4228",city:"Decatur",state:"TX",zip:"76234",phone:"(940) 627-3949",website:"nrsevents.com",events:7,notes:"Weekly ropings and barrel races, 100+ stalls, adjacent to NRS World store"},
+  {name:"Still Waters Cowboy Church",address:"1699 State Highway 315",city:"Carthage",state:"TX",zip:"75633",phone:"(903) 702-2158",website:"swcccarthage.org",events:7,notes:"Panola County — listed as Gainesville in some flyers"},
+  {name:"Badiola Arena",address:"402 US Hwy 95",city:"Homedale",state:"ID",zip:"83628",phone:"(208) 989-8082",website:"badiolaarena.com",events:6,notes:"Heated indoor arena with concessions, coffee shop, and sports bar on property"},
+  {name:"Rim Rock Riders Arena",address:"17037 SW Alfalfa Rd",city:"Powell Butte",state:"OR",zip:"97753",phone:"(541) 980-7911",website:"rimrockriders.org",events:6,notes:"252×141' indoor, 258×145' outdoor, 208 covered stalls, RV hookups, café"},
+  {name:"Kerry Kelly Arena",address:"4300 Granbury Hwy",city:"Weatherford",state:"TX",zip:"76087",phone:"",website:"",events:6,notes:"Active jackpot venue west of Fort Worth"},
+  {name:"Henderson County Fair Park",address:"3356 TX-31 Bus",city:"Athens",state:"TX",zip:"75751",phone:"",website:"",events:6,notes:"East Texas fairgrounds arena"},
+  {name:"4M Arena",address:"40447 East County Road 1510",city:"Pauls Valley",state:"OK",zip:"",phone:"",website:"",events:6,notes:"Garvin County Oklahoma"},
+  {name:"Parker County Arena",address:"1010 FM 1885",city:"Weatherford",state:"TX",zip:"",phone:"",website:"parkercountyarena.com",events:5,notes:"175×350' covered main arena, 100-seat bleachers, competition timing"},
+  {name:"Circle T Arena",address:"4007 W Hwy 36",city:"Hamilton",state:"TX",zip:"76531",phone:"(254) 386-3559",website:"circletarena.net",events:5,notes:"WSTR major qualifier, on-site Crossfire Steakhouse and The Inn at Circle T"},
+  {name:"Rancho Rio",address:"1325 N Tegner St",city:"Wickenburg",state:"AZ",zip:"85390",phone:"(520) 251-1495",website:"ranchorioaz.com",events:5,notes:"Premier Arizona roping destination in the West's richest small town"},
+  {name:"S Bar J Arena",address:"3301 N Del Rey",city:"Sanger",state:"CA",zip:"",phone:"",website:"",events:5,notes:"Central California, Fresno County"},
+  {name:"JK Northway Covered Arena",address:"501 E Escondido Rd",city:"Kingsville",state:"TX",zip:"",phone:"",website:"",events:5,notes:"Historic home of the George Strait Team Roping Classic"},
+  {name:"Cross Bar Arena",address:"5270 W 171st St S",city:"Mounds",state:"OK",zip:"74047",phone:"(918) 241-3708",website:"crossbararena.com",events:4,notes:"Owned by Happy Acres Cowboy Church, non-profit 501(c)3"},
+  {name:"Welcome Home Ranch",address:"26601 S Val Vista Drive",city:"Gilbert",state:"AZ",zip:"",phone:"",website:"",events:4,notes:"Southeast Valley Arizona roping"},
+  {name:"Pecos County Coliseum",address:"1658 Airport Drive",city:"Fort Stockton",state:"TX",zip:"79735",phone:"",website:"",events:4,notes:"At I-10 and US-285, West Texas"},
+  {name:"Lazy E Arena",address:"9600 Lazy E Dr",city:"Guthrie",state:"OK",zip:"73044",phone:"(405) 282-3004",website:"lazye.com",events:4,notes:"440' climate-controlled arena, 7,200-seat, home of Bob Feist Invitational and Timed Event Championship of the World"},
+  {name:"Casa Grande Rodeo Grounds",address:"400 W Rodeo Rd",city:"Casa Grande",state:"AZ",zip:"",phone:"",website:"",events:4,notes:"Pinal County, central Arizona"},
+  {name:"Short Go Ministries Arena",address:"7289 FM 410 N",city:"Detroit",state:"TX",zip:"",phone:"",website:"",events:4,notes:"Red River County, Northeast Texas"},
+  {name:"Mallet Event Center & Arena",address:"2320 S US Hwy 385",city:"Levelland",state:"TX",zip:"79336",phone:"(806) 894-4161",website:"malleteventcenter.com",events:4,notes:"Climate-controlled indoor, 288 covered stalls, 85 RV hookups"},
+  {name:"Corral Arena",address:"1901 E Stanolind Rd",city:"Hobbs",state:"NM",zip:"",phone:"",website:"",events:4,notes:"Lea County, Southeast New Mexico"},
+  {name:"Martin County Community Complex",address:"909 Millhollan Way",city:"Stanton",state:"TX",zip:"79782",phone:"(432) 848-2334",website:"martincountycommunitycomplex.com",events:4,notes:"Brand new 85-acre complex, completed 2025, indoor & outdoor rodeo arenas"},
+  {name:"Rockin CR Ranch",address:"7333 FM 66",city:"Maypearl",state:"TX",zip:"",phone:"",website:"",events:4,notes:"Ellis County Texas"},
+  {name:"Lightning C Arena",address:"210 Lightning C Arena Rd",city:"McAlester",state:"OK",zip:"",phone:"",website:"",events:3,notes:"Pittsburg County, Southeast Oklahoma"},
+  {name:"Riata Ranch",address:"826 Arena Lane",city:"Cheyenne",state:"WY",zip:"82009",phone:"",website:"",events:3,notes:"Laramie County Wyoming"},
+  {name:"Doty Rodeo Complex — Tarleton State University",address:"13635 FM 3025",city:"Stephenville",state:"TX",zip:"76401",phone:"",website:"",events:3,notes:"Collegiate rodeo facility, Erath County"},
+  {name:"Haselwood Arena",address:"2901 N Dike Rd",city:"Augusta",state:"KS",zip:"67010",phone:"",website:"",events:3,notes:"Butler County, Kansas"},
+  {name:"Dunns Arena",address:"7653 N Sarival Ave",city:"Litchfield Park",state:"AZ",zip:"85340",phone:"",website:"",events:3,notes:"West Valley Phoenix area"},
+  {name:"ACE Arena",address:"1441 E State Hwy 176",city:"Andrews",state:"TX",zip:"79714",phone:"",website:"",events:3,notes:"Air-conditioned indoor arena — Andrews County Expo multipurpose facility"},
+  {name:"Downtown Arena",address:"520 N Tegner",city:"Wickenburg",state:"AZ",zip:"",phone:"",website:"",events:2,notes:"Town center Wickenburg AZ"},
+  {name:"Buckeye Equestrian & Events Center",address:"10300 S Miller Rd",city:"Buckeye",state:"AZ",zip:"85326",phone:"(623) 340-8208",website:"buckeyearena.com",events:2,notes:"Southwest Valley Phoenix area"},
+  {name:"Kerley Horse Center",address:"11997 SW Cornett Loop",city:"Powell Butte",state:"OR",zip:"",phone:"",website:"",events:2,notes:"WSTR qualifier venue, Central Oregon"},
+  {name:"Young County Arena",address:"120 Barclay Blvd",city:"Graham",state:"TX",zip:"76450",phone:"(940) 550-8790",website:"youngcountyarena.com",events:2,notes:"North Texas, Young County"},
+  {name:"Val Verde County Fairgrounds",address:"",city:"Del Rio",state:"TX",zip:"",phone:"(830) 309-8555",website:"",events:2,notes:"Val Verde County, Southwest Texas"},
+  {name:"South Point Arena & Equestrian Center",address:"9777 S Las Vegas Blvd",city:"Las Vegas",state:"NV",zip:"89183",phone:"",website:"",events:2,notes:"1,200+ stalls, the premier equestrian facility on the Las Vegas Strip"},
+  {name:"Lometa Lions Club Arena",address:"",city:"Lometa",state:"TX",zip:"",phone:"(512) 940-4786",website:"",events:2,notes:"Lampasas County Texas"},
+  {name:"Western Equine Sports Arena",address:"5920 County Road 500",city:"Blue Ridge",state:"TX",zip:"75424",phone:"(903) 556-6283",website:"wesarena.com",events:2,notes:"300+ stalls, 52 RV hookups, 3 arenas, cutting horse facility"},
+  {name:"Marana Heritage Arena",address:"13310 N Postvale Rd",city:"Marana",state:"AZ",zip:"85653",phone:"(520) 240-6280",website:"maranasheritagearena.com",events:2,notes:"Off I-10 Exit 236, barrel racing 1st & 3rd Saturdays"},
+  {name:"Gila County Fair Grounds",address:"900 E Fairgrounds Rd",city:"Globe",state:"AZ",zip:"85501",phone:"(928) 243-0598",website:"gilacountyfair.com",events:2,notes:"#1 GCPRA Rodeo in Arizona, north of Globe on US-60"},
+  {name:"Longhorn Arena",address:"8802 Hwy M",city:"Mount Vernon",state:"MO",zip:"",phone:"",website:"",events:2,notes:"Lawrence County, Southwest Missouri"},
+  {name:"J Bar C Cowboy Church Arena",address:"230 E FM 813",city:"Palmer",state:"TX",zip:"",phone:"",website:"",events:2,notes:"Ellis County Texas"},
+  {name:"Cotton Rosser Rodeo Complex — Cal Poly",address:"Mt Bishop Road, Cal Poly Campus",city:"San Luis Obispo",state:"CA",zip:"93407",phone:"(805) 756-6601",website:"cafes-rodeo.calpoly.edu",events:2,notes:"Named 2022 for rodeo legend Cotton Rosser, home of the 80+ year Poly Royal Rodeo"},
+  {name:"OKC OG&E Coliseum",address:"301 Gordon Cooper Blvd",city:"Oklahoma City",state:"OK",zip:"",phone:"",website:"",events:2,notes:"Oklahoma State Fairgrounds"},
+  {name:"D & D Livestock and Boarding",address:"132 Two Valley Rd",city:"Riverton",state:"WY",zip:"82501",phone:"",website:"",events:2,notes:"Fremont County Wyoming"},
+  {name:"San Antonio Rose Palace",address:"25665 Boerne Stage Rd",city:"San Antonio",state:"TX",zip:"78255",phone:"",website:"",events:2,notes:"Northwest San Antonio"},
+  {name:"McCurley Ranch",address:"30962 Combs Rd",city:"Escalon",state:"CA",zip:"",phone:"",website:"",events:2,notes:"San Joaquin County, Central California"},
+  {name:"Diamond B Ranch",address:"20250 E Price Station Rd",city:"Florence",state:"AZ",zip:"85123",phone:"",website:"",events:2,notes:"Pinal County Arizona"},
+  {name:"Paris Rodeo Arena",address:"550 Clement Rd",city:"Paris",state:"TX",zip:"",phone:"",website:"",events:2,notes:"Lamar County, Northeast Texas"},
+  {name:"Taylor Rodeo Grounds",address:"202 W Center St",city:"Taylor",state:"AZ",zip:"85939",phone:"(928) 707-1044",website:"",events:2,notes:"Navajo County Arizona"},
+  {name:"Three Rivers Lions Club Arena",address:"",city:"Three Rivers",state:"CA",zip:"",phone:"(559) 303-0729",website:"",events:2,notes:"Tulare County, Sierra Nevada foothills"},
+  {name:"Common Ground Cowboy Church",address:"890 State Highway 14S",city:"Kosse",state:"TX",zip:"76653",phone:"",website:"",events:2,notes:"Limestone County Texas"},
+  {name:"Cowboy Fellowship Arena",address:"561 FM 3350",city:"Jourdanton",state:"TX",zip:"78026",phone:"(830) 769-3733",website:"cowboyfellowship.org",events:2,notes:"Atascosa County — cowboy church and full arena ministry"},
+  {name:"Wilbur Baber Memorial Complex",address:"499 County Road 200",city:"Hallettsville",state:"TX",zip:"77964",phone:"(361) 798-1600",website:"",events:2,notes:"80 RV hookups, corner of FM 957 & CR 200, Lavaca County"},
+  {name:"X4 Bar Arena",address:"1803 M Rd",city:"Fruita",state:"CO",zip:"",phone:"",website:"",events:2,notes:"Mesa County, Western Colorado"},
+  {name:"Pima County Fairgrounds",address:"11300 S Houghton Rd",city:"Tucson",state:"AZ",zip:"85747",phone:"",website:"",events:2,notes:"Southeast Tucson"},
+  {name:"BCB Equine Center",address:"4332 Highway O",city:"Williamsville",state:"MO",zip:"",phone:"",website:"",events:2,notes:"Wayne County, Southeast Missouri"},
+  {name:"OKC Fairgrounds",address:"3001 General Pershing Blvd",city:"Oklahoma City",state:"OK",zip:"73107",phone:"",website:"",events:2,notes:"Oklahoma State Fairgrounds complex"},
+  {name:"Petaluma Riding Club",address:"1820 Skillman Lane",city:"Petaluma",state:"CA",zip:"94952",phone:"",website:"",events:2,notes:"Sonoma County, Northern California"},
+  {name:"James Kjerstad Event Center",address:"915 Centre St",city:"Rapid City",state:"SD",zip:"57701",phone:"",website:"",events:2,notes:"Pennington County, South Dakota"},
+  {name:"Clark County Saddle Club",address:"11407 NE 174th Circle",city:"Battle Ground",state:"WA",zip:"98604",phone:"",website:"",events:2,notes:"Southwest Washington"},
+  {name:"3 Bar Arena",address:"2439 South County Rd 1050",city:"Stanton",state:"TX",zip:"79706",phone:"",website:"",events:1,notes:"Martin County Texas"},
+  {name:"Blue Mountain Equine Center",address:"125 SW 18th St",city:"Pendleton",state:"OR",zip:"97801",phone:"",website:"bluemountainequinecenter.com",events:1,notes:"Brand new BMCC facility opened April 2025, adjacent to Pendleton Round-Up grounds"},
+  {name:"Limestone County Fairgrounds",address:"922 N Tyus St",city:"Groesbeck",state:"TX",zip:"",phone:"",website:"",events:1,notes:"Limestone County Texas"},
+  {name:"Mashburn Event Center",address:"1100 7th St NW",city:"Childress",state:"TX",zip:"79201",phone:"(806) 269-7514",website:"mashburneventcenter.com",events:1,notes:"76 covered stalls, 13,000 sq ft climate-controlled expo center"},
+  {name:"Running R Arena",address:"338798 E US-62",city:"Meeker",state:"OK",zip:"74855",phone:"",website:"",events:1,notes:"Lincoln County Oklahoma"},
+  {name:"Navajo County Fairgrounds",address:"404 E Hopi Drive",city:"Holbrook",state:"AZ",zip:"86025",phone:"(928) 524-4757",website:"navajocountyfair.net",events:1,notes:"Voted #1 GCPRA Rodeo in Arizona, 90+ year tradition"},
+  {name:"4D Arena",address:"23465 W Patton Rd",city:"Wittmann",state:"AZ",zip:"85361",phone:"",website:"",events:1,notes:"Northwest Maricopa County"},
+  {name:"Coyote Arena",address:"35011 N 214th Dr",city:"Wittmann",state:"AZ",zip:"85361",phone:"(971) 678-9513",website:"coyotearena.com",events:1,notes:"Purpose-built 2024, 140×240' sand footing, digital sign-up, Friday open ropings"},
+  {name:"16 North Arena",address:"4740 State Highway 16",city:"De Leon",state:"TX",zip:"",phone:"",website:"",events:1,notes:"Comanche County Texas"},
+  {name:"Armstrong Equine Services",address:"",city:"Stephenville",state:"TX",zip:"",phone:"(844) 730-5658",website:"",events:1,notes:"Erath County Texas"},
+  {name:"Circle L Arena",address:"",city:"Ochelata",state:"OK",zip:"",phone:"(918) 883-1424",website:"",events:1,notes:"Washington County Oklahoma"},
+  {name:"Slash Y Arena",address:"",city:"Selah",state:"WA",zip:"",phone:"",website:"actra.org",events:1,notes:"ACTRA Northwest chapter venue, Yakima County"},
+  {name:"Thunder Valley Ranch",address:"250 Duquesne Rd",city:"Nogales",state:"AZ",zip:"",phone:"",website:"",events:1,notes:"Santa Cruz County Arizona"},
+  {name:"Fillmore Roping Club",address:"338 Chambersburg Road",city:"Fillmore",state:"CA",zip:"",phone:"",website:"",events:1,notes:"Ventura County, Southern California"},
+  {name:"Rancho Los Amigos Arena",address:"8530 S 29th Ave",city:"Laveen",state:"AZ",zip:"",phone:"",website:"",events:1,notes:"Southwest Phoenix/Laveen area"},
+  {name:"Cooke County Cowboy Church",address:"8207 US 82",city:"Gainesville",state:"TX",zip:"76240",phone:"(940) 367-0849",website:"cookecountycowboychurch.com",events:1,notes:"North Texas, Cooke County"},
+  {name:"Jasper County Cowboy Church",address:"2200 W Gibson",city:"Jasper",state:"TX",zip:"75951",phone:"",website:"",events:1,notes:"Deep East Texas"},
+  {name:"Crockett County Arena",address:"1301 Avenue AA",city:"Ozona",state:"TX",zip:"76943",phone:"",website:"",events:1,notes:"West Texas ranch country"},
+  {name:"Cavvietta Cattle Company",address:"6131 Town Creek Rd",city:"Elm City",state:"NC",zip:"",phone:"",website:"",events:1,notes:"Wilson County, North Carolina"},
+  {name:"J.B. Wells Covered Arena",address:"2301 County Road 197",city:"Gonzales",state:"TX",zip:"78629",phone:"(830) 672-6558",website:"",events:1,notes:"City-owned 130×241' covered arena, 1,500-seat capacity"},
+  {name:"Willow Springs Horse Expo Grounds",address:"Mile Post 420, Highway 264",city:"Steamboat",state:"AZ",zip:"",phone:"",website:"",events:1,notes:"Navajo Nation, Highway 264 corridor"},
+  {name:"Our Father's Way Arena",address:"797 Davinci Dr",city:"Fort Blackmore",state:"VA",zip:"",phone:"",website:"",events:1,notes:"Scott County Virginia"},
+  {name:"Our Father's Way Arena",address:"797 Davinci Dr",city:"Fort Blackmore",state:"VA",zip:"",phone:"",website:"",events:1,notes:"Scott County Virginia"},
+];
+
+// Deduplicate by name+city
+const seen = new Set();
+const UNIQUE_ARENAS = ARENAS.filter(a => {
+  const key = a.name + a.city + a.state;
+  if (seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
+
+const MAIN_STATES = ['TX','AZ','OK','CA','WA','OR','NV'];
+let currentState = 'all';
+
+function googleMapsUrl(arena) {
+  const q = [arena.address, arena.city, arena.state, arena.zip].filter(Boolean).join(' ');
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q || arena.name + ' ' + arena.city + ' ' + arena.state)}`;
+}
+
+function eventBadgeClass(n) {
+  if (n >= 8) return 'high';
+  if (n >= 4) return 'mid';
+  return '';
+}
+
+function buildCard(arena) {
+  const mapUrl = googleMapsUrl(arena);
+  const badgeClass = eventBadgeClass(arena.events);
+  const eventLabel = arena.events === 1 ? '1 event' : `${arena.events} events`;
+
+  let details = '';
+  if (arena.address) details += `<div class="arena-address">📍 ${arena.address}, ${arena.city}, ${arena.state}${arena.zip ? ' ' + arena.zip : ''}</div>`;
+  else details += `<div class="arena-address">📍 ${arena.city}, ${arena.state}</div>`;
+  if (arena.phone) details += `<div class="arena-phone">📞 <a href="tel:${arena.phone.replace(/\D/g,'')}" style="color:inherit;text-decoration:none;">${arena.phone}</a></div>`;
+  if (arena.notes) details += `<div class="arena-notes">${arena.notes}</div>`;
+
+  return `
+<article class="arena-card" data-state="${arena.state}" data-name="${arena.name.toLowerCase()}" data-city="${arena.city.toLowerCase()}">
+  <div class="arena-card-stripe"></div>
+  <div class="arena-card-body">
+    <div class="arena-name">${arena.name}</div>
+    <div class="arena-location">🤠 ${arena.city}, ${arena.state}</div>
+    ${details}
+  </div>
+  <div class="arena-card-footer">
+    <span class="arena-event-badge ${badgeClass}">${eventLabel}</span>
+    <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" class="arena-map-btn" aria-label="Open ${arena.name} in Google Maps">🗺 Map</a>
+  </div>
+</article>`;
+}
+
+function filterArenas() {
+  const q = document.getElementById('arena-search').value.toLowerCase().trim();
+  const grid = document.getElementById('arena-grid');
+  let html = '';
+  let count = 0;
+
+  UNIQUE_ARENAS.forEach(arena => {
+    const matchState = currentState === 'all' || 
+      (currentState === 'other' ? !MAIN_STATES.includes(arena.state) : arena.state === currentState);
+    const matchSearch = !q || 
+      arena.name.toLowerCase().includes(q) || 
+      arena.city.toLowerCase().includes(q) || 
+      arena.state.toLowerCase().includes(q) ||
+      (arena.address && arena.address.toLowerCase().includes(q));
+    if (matchState && matchSearch) {
+      html += buildCard(arena);
+      count++;
+    }
+  });
+
+  grid.innerHTML = html || `<div class="no-results" style="grid-column:1/-1;"><div class="no-results-icon">🤠</div><div class="no-results-text">No arenas found. Try a different search.</div></div>`;
+  document.getElementById('result-count').textContent = `Showing ${count} arena${count !== 1 ? 's' : ''}`;
+}
+
+function setStateFilter(el, state) {
+  document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  currentState = state;
+  filterArenas();
+}
+
+// Sort alphabetically
+UNIQUE_ARENAS.sort((a, b) => a.name.localeCompare(b.name));
+
+// Initial render
+filterArenas();
+</script>
+
+</body>
+</html>
